@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Produto</title>
+    <link rel="stylesheet" href="./pagina1.css">
+</head>
+<body>
+    <header>
+        <h1>Detalhes do Produto</h1>
+    </header>
+    <main>
+        <div class="container1">
+            <div class="product1"> <!-- Corrigido o nome da classe -->
+                <div class="container-imagem">
+                    <img src="../imagem/Brigadeiro Gourmet.jpg" alt="Brigadeiro Gourmet">
+                    <picture>
+                        <source media="(max-width: 800px)" srcset="../imagem/avaliação/Avaliação.png">    
+                        <img src="../imagem/avaliação/Avaliação.png" alt="avaliação-imagem">
+                    </picture>
+                </div>    
+                <h2>Brigadeiro Gourmet</h2>
+                <p class="description1">O doce mais amado do Brasil agora em várias versões. Neste material reunimos mais de 50 tipos e sabores de brigadeiro gourmet para você escalar suas vendas e se diferenciar do mercado. Ideal para doces de festa e Kit festa + bolo.</p>
+                <h2>A História do Brigadeiro</h2>
+                <p>O brigadeiro é uma paixão nacional. Não à toa, o doce tem uma data só para ele: 10 de setembro marca o Dia do Brigadeiro, essa iguaria deliciosa que faz parte do nosso dia a dia. Ele merece! Afinal, leva poucos ingredientes, é fácil e rápido de fazer. Mas qual é a verdadeira história do brigadeiro? O brigadeiro é "coisa nossa". O quitute de leite condensado, chocolate em pó e manteiga nasceu nas mãos da doceira carioca Heloísa Nabuco de Oliveira. Em 1946, ela criou o docinho para vender e arrecadar fundos para a campanha presidencial do brigadeiro Eduardo Gomes, seu candidato favorito. Não demorou muito para a novidade se tornar a guloseima mais pedida nas reuniões dos cabos eleitorais e receber o apelido de "docinho do brigadeiro". O brigadeiro Eduardo Gomes não venceu as eleições, mas ganhou uma grande homenagem. O brigadeiro, em todas as suas versões, é um dos doces mais amados do Brasil.</p>
+                <br>
+                <p class="description1">Clicando em "comprar" você será direcionado para página de compra onde verá muito mais detalhes desse material, espero que goste e boa compra!!</p>
+                <span class="price1">R$ 10,00</span>
+                <a href="#" class="comprar1" onclick="redirectToHotmart('G91813794F?dp=1')">Comprar</a> <!-- Corrigido a classe para corresponder ao CSS -->
+            </div>
+            <div class="container-botao1">
+                <a href="../index.html" class="voltar1">Voltar Para Página Anterior</a>
+            </div>
+        </div>    
+    </main>
+    <script src="../src/scripts.js"></script>
+</body>
+</html>
