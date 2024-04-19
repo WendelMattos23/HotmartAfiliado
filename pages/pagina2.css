@@ -25,7 +25,7 @@ main {
     text-align: justify;
 }
 
-.container1 {
+.container2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,7 +35,7 @@ main {
     font-style: italic;
 }
 
-.product1 {
+.product2 {
     color: white;
     margin: auto;
     padding: auto;
@@ -44,34 +44,36 @@ main {
     transition: transform 0.3s ease;
     width: calc(50% - 20px); /* Divide a largura em 50% menos o espaço entre as colunas */
     margin-bottom: 20px; /* Adiciona um espaço entre as linhas */
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
 }
 
-.product1:hover {
+.product2:hover {
     transform: scale(1.05);
 }
 
-.product1 img {
-    width: 100%;
+.product2 img {
     height: auto;
     border-radius: 5px;
     margin-bottom: 10px;
 }
 
-.product1 h2 {
+.product2 h2 {
     font-size: 1.5em;
     margin: 10px 0;
 }
 
-.product1 p.description1 {
+.product2 p.description1 {
     margin-bottom: 10px;
 }
 
-.product1 span.price1 {
+.product2 span.price1 {
     font-weight: bold;
     font-size: 1.2em;
 }
 
-.comprar1 {
+.comprar2 {
     display: inline-block;
     padding: 10px 20px;
     background-color: rgb(0, 255, 42);
@@ -83,19 +85,19 @@ main {
     transition: background-color 0.3s ease;
 }
 
-.comprar1:hover {
+.comprar2:hover {
     background-color: #8aabdd;
 }
 
-.container-imagem img {
+.container-imagem2 img {
     transition: transform 0.3s ease;
 }
 
-.container-imagem img:hover {
+.container-imagem2 img:hover {
     transform: scale(1.1);
 }
 
-.comprar1 {
+.comprar2 {
     margin: 25px;
     padding: 10px 20px;
     border: rgb(255, 255, 255);
@@ -113,7 +115,7 @@ main {
     }
 }
 
-.container-botao1 {
+.container-botao2 {
     display: inline-block;
     padding: 10px 20px;
     background-color: #fcfcfc;
@@ -125,13 +127,21 @@ main {
     transition: background-color 0.3s ease;
 }
 
-.container-botao1:hover {
+.container-botao2:hover {
     background-color: #8aabdd;
 }
 
 
-@media only screen and (max-width: 767px) {
-    .product1 {
-        width: calc(100% - 20px); 
+@media screen and (min-width: 768px) {
+
+    .product2 {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 70%;
+    }
+    .header {
+        height: 600px;
+        height: 60vh;
+        justify-content: center;
     }
 }

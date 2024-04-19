@@ -21,6 +21,9 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
 }
 
 .produto {
@@ -80,8 +83,15 @@ main {
     }
 }
 
-@media only screen and (max-width: 767px) {
-    .product1 {
-        width: calc(100% - 20px); 
+@media screen and (min-width: 768px) {
+    .container-produto {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 70%;
+    }
+    .header {
+        height: 600px;
+        height: 60vh;
+        justify-content: center;
     }
 }
